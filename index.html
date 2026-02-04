@@ -1,61 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Given Makofane | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Given Makofane</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Given Makofane</div>
-        <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-       <div class="menu-links">
-        <li><a href="#about"  onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience"  onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects"  onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-       </div>
-        </div>
-    </nav>
-    <section id="profile">
-            <div class="section_pic_container">
-                <img src="./assets/given.PNG" alt="profile_picture">
-            </div>
-            <div class="section_text">
-                <p class="section_text_p1">Hello I am</p>
-                <h1 class="title">Given Makofane</h1>
-                <p class="section_text_p2">Frontend Developer</p>
 
-                <div class="btn_container">
-                    <button class="btn_color2" onclick="window.open('./assets/GP_Makofane_cv.pdf')">download CV</button>
-                    <button class="btn_color1" onclick="location.href='./#contact' " >Contact info</button>
-                </div>
-                
-                <div id="socials_container">
-                    <img src="./assets/linkedin.png" alt="My Linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/given-makofane-7b2755301' ">
-                    <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/Givenmak-7' ">
-                </div>
-            
-            </div>
-    </section>
+  <!-- Desktop Navigation -->
+  <nav id="desktop-nav">
+    <div class="logo">Given Makofane</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hamburger Navigation -->
+  <nav id="hamburger-nav">
+    <div class="logo">Given Makofane</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Landing / Profile Section -->
+  <section id="profile">
+    <div class="section_pic_container">
+      <img src="./assets/given.PNG" alt="Given Makofane profile picture" />
+    </div>
+
+    <div class="section_text">
+      <p class="section_text_p1">Hello, I’m</p>
+      <h1 class="title">Given Makofane</h1>
+      <p class="section_text_p2">Computer Science Graduate · Data Enthusiast · Student Mentor · QYF Alumni</p>
+
+      <div class="btn_container">
+        <button class="btn_color2" onclick="window.open('./assets/GP_Makofane_cv.pdf')">
+          Download CV
+        </button>
+        <button class="btn_color1" onclick="location.href='#contact'">
+          Contact Me
+        </button>
+      </div>
+
+      <div id="socials_container">
+        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/given-makofane-7b2755301'" />
+        <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/Givenmak-7'" />
+        <img src="./assets/email.png" alt="Email" class="icon" onclick="location.href='mailto:givenmakofane0@gmail.com'" />
+      </div>
+    </div>
+  </section>
+
+<!-- About Section -->
+  <section id="about" class="about-section">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-container">
+
+      <h3>Overview</h3>
+      <p>
+        I am a Computer Science graduate from the University of the Witwatersrand with a strong academic and practical foundation in software development, data analytics, and problem-solving. I am an analytical thinker and lifelong learner who is passionate about applying technology to solve real-world challenges in business, education, and community-focused environments.
+      </p>
+      <p>
+        I bring a balance of technical capability, leadership experience, and strong communication skills, developed through academic projects, internships, tutoring roles, and collaborative team environments.
+      </p>
+
+      <h3>Education & Academic Focus</h3>
+      <p>
+        I hold a Bachelor’s degree in Computer Science from the University of the Witwatersrand (2025) and am currently pursuing a Postgraduate Diploma in Innovation and Entrepreneurship at the same institution. My academic background includes programming, algorithms, data structures, databases, and analytical problem-solving.
+      </p>
+      <p>
+        I have been recognized for academic excellence, achieving distinctions in Database Fundamentals and Introduction to Algorithms and Programming. These experiences strengthened my ability to design efficient solutions and approach problems logically.
+      </p>
+
+      <h3>Technical Skills & Interests</h3>
+      <p>
+        My technical skill set spans both software development and data analytics. I have experience working with Python, Java, and C++, as well as tools such as Power BI, Excel, Power Query, and basic DAX. I enjoy transforming raw data into meaningful insights and building user-focused applications that prioritize clarity and usability.
+      </p>
+
+      <h3>Professional & Practical Experience</h3>
+      <p>
+        I completed a virtual internship with SAGEA as part of the Quantify Your Future (QYF) programme, where I worked on real-world data analysis projects aligned with South Africa’s skills and labour market challenges. I analyzed Higher Education Management Information System (HEMIS) data to investigate student enrolment trends, graduation outcomes, and skills alignment, producing structured, evidence-based insights.
+      </p>
+      <p>
+        At the University of the Witwatersrand, I served as an Academic Tutor for Introduction to Data Structures and Algorithms and Basic Computer Organisation. I also worked as a Lead Student Mentor, supporting students with academic adjustment, time management, and personal development. These roles strengthened my communication, leadership, and mentoring abilities.
+      </p>
+
+      <h3>Projects & Collaboration</h3>
+      <p>
+        I have worked on several technical projects, including a Power BI Sales Insights Dashboard, a responsive school website built with React and Tailwind CSS, and a final-year Event Planner web application where I served as Project Manager and Documentation Lead. These projects required a combination of technical implementation, Agile coordination, and clear documentation.
+      </p>
+      <p>
+        I also participated in the Adapt IT Social Good Hackathon and AWS Cloudathon, contributing to the frontend development of a mobile application aimed at connecting disadvantaged communities with freelancing opportunities.
+      </p>
+
+      <h3>Career Goals</h3>
+      <p>
+        I am currently seeking entry-level or graduate opportunities in software development, data analytics, or technology-focused roles where I can continue learning, contribute meaningfully, and grow professionally in collaborative environments.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-card">
+      <h3>Sales Insights Dashboard (Power BI)</h3>
+      <p class="project-links"><a href="https://github.com/Givenmak-7/Sales-Insights-dashboard" target="_blank">GitHub</a></p>
+      <ul>
+        <li>Built an interactive Power BI dashboard analyzing sales trends by product, region, and time.</li>
+        <li>Created KPIs and visualizations to identify revenue drivers and sales spikes.</li>
+        <li>Applied Power Query, basic DAX, and data visualization to generate actionable business insights.</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h3>School Website Development (Phafane School)</h3>
+      <p class="project-links"><a href="https://github.com/Givenmak-7/Phafane" target="_blank">GitHub</a></p>
+      <ul>
+        <li>Developed a responsive school website using React.js and Tailwind CSS.</li>
+        <li>Optimized layouts for desktop and mobile to improve accessibility and UX.</li>
+        <li>Documented technical decisions and design solutions.</li>
+        <li><strong>Tech Stack:</strong> React.js, Tailwind CSS, JavaScript, OpenAI, CMS integration</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h3>Planit Event Planner Web App (Final Year Project)</h3>
+      <p class="project-links"><a href="https://github.com/Codexa-v1/Codexa" target="_blank">GitHub</a></p>
+      <ul>
+        <li>Led the project as Project Manager, coordinating tasks, timelines, and Agile Scrum meetings.</li>
+        <li>Managed Trello boards to track workflows and team progress.</li>
+        <li>Served as Documentation Lead, coordinating and authoring the final group report.</li>
+        <li>Provided full-stack development support across front-end and back-end components.</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h3>Adapt IT Social Good Hackathon & AWS Cloudathon (2024)</h3>
+      <ul>
+        <li>Participated in a hackathon focused on building a free freelancing app for disadvantaged communities.</li>
+        <li>Contributed to frontend development using Java and Android Studio.</li>
+        <li>Collaborated with cross-functional teams under tight deadlines.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: <a href="mailto:givenmakofane0@gmail.com">givenmakofane0@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/given-makofane-7b2755301" target="_blank">Given Makofane</a></p>
+    <p>Phone: <a href="tel:+27727394067">+27 72 739 4067</a></p>
+  </section>
+
+  <script src="scripts.js"></script>
 </body>
-<script src="scripts.js"></script>
 </html>
+
+
+
+
+
+
+
