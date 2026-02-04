@@ -1,8 +1,115 @@
-@media screen and (max-width: 1200px) {
-    #desktop-nav{
-        display: none;
-    }
-    #hamburger-nav{
-        display: flex;
-    }
+/* =========================
+   MOBILE & TABLET STYLES
+   ========================= */
+
+@media screen and (max-width: 768px) {
+
+  /* NAVIGATION */
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  /* PROFILE SECTION */
+  #profile {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .section_pic_container {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 1.5rem;
+  }
+
+  .section_pic_container img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .section_text {
+    align-items: center;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .section_text_p2 {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* BUTTONS */
+  .btn_container {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+  }
+
+  .btn_container button {
+    width: 100%;
+  }
+
+  /* SOCIAL ICONS */
+  #socials_container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  /* ABOUT SECTION */
+  .about-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .about-container {
+    max-width: 100%;
+  }
+
+  .about-container h3 {
+    font-size: 1.15rem;
+    margin-top: 2rem;
+  }
+
+  .about-container p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  /* PROJECTS */
+  .projects-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-card ul {
+    padding-left: 1rem;
+  }
+
+  .project-card li {
+    font-size: 0.95rem;
+  }
+
+  /* CONTACT */
+  .contact-section {
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .contact-section p {
+    font-size: 0.95rem;
+  }
 }
